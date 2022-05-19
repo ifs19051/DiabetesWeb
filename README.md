@@ -8,8 +8,8 @@ Library yang dibutuhkan
 4. pickle for make model Machine Learning
  
 # Nama contributor
-1.11S19051-Handy Sonflow Sitepu
-2.11S19052-Rens Junior Sibarani
-3.11S19038-Jogi Arif Sitinjak
-4.11S19054-Yoni Herlina Siahaan
-5.11S19028-Deiva Pasaribu
+1. 11S19051-Handy Sonflow Sitepu
+2. 11S19052-Rens Junior Sibarani
+3. 11S19038-Jogi Arif Sitinjak
+4. 11S19054-Yoni Herlina Siahaan
+5. 11S19028-Deiva Pasaribu
