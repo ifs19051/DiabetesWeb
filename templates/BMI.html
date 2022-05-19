@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CO2 Emission Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<a href="{{ url_for('Pregnancies')}}"method="post">Pregnancies</a>
+	<a href="{{ url_for('Glucose')}}"method="post">Glucose</a>
+	<a href="{{ url_for('BloodPressure')}}"method="post">BloodPressure</a>
+	<a href="{{ url_for('SkinThickness')}}"method="post">SkinThickness</a>
+	<a href="{{ url_for('Insulin')}}"method="post">Insulin</a>
+	<a href="{{ url_for('BMI')}}"method="post">BMI</a>
+	<a href="{{ url_for('DiabetesPedigreeFunction')}}"method="post">DiabetesPedigreeFunction</a>
+	<a href="{{ url_for('Age')}}"method="post">Age</a>
+				
+     <!-- Main Input For Receiving Query to our ML -->
+    <h3>halaman BMI<h3>
+
+ </div>
+
+
+</body>
+</html>
