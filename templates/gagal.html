@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html >
 
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>CO2 Emission Predictor</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<title>Diabetes check</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-
 <body>
- <div class="login">
+				  <div class="text-center">
+					<div class="position-absolute top-0 end-0">
+						<a href="{{ url_for('home')}}"><button type="button" class="btn-close" aria-label="Close"></button></a>
+					</div>
+					<img src="{{url_for('static', filename='img/Sad face_Flatline.png')}}" class="rounded" alt="..." style="width: 380px; height: 350px;">
+					<h5 style="font-size: 51px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">SO SORRY</h5>
+					<h5 style="font-size: 51px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";>YOUR DIABETES IS NOT NORMAL</h5>
+					<img src="{{url_for('static', filename='img/gelombang merah.png')}}" style="width: 100%; height: 179px;">
+				</div>
+				  
 
-     <!-- Main Input For Receiving Query to our ML -->
-    <h3>anda penderita diabetes<h3>
-
- </div>
-
-
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
