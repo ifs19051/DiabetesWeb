@@ -8,8 +8,15 @@ img {
     max-width: 100%;
 }
 
+li {
+    font-size: 26px;
+}
 
-h1{
+label {
+    font-size: 24px;
+}
+
+h1 {
     font-family: 'Poppins', sans-serif, ;
     font-weight: 900;
     color: #38424d;
@@ -25,7 +32,7 @@ h4 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 24px;
     color: #747e74;
@@ -37,7 +44,6 @@ p {
     padding-top: 80px;
     animation: bounceTop-1 3s ease infinite;
 }
-
 
 .header-shape-1 {
     position: absolute;
@@ -59,8 +65,8 @@ p {
     z-index: -1;
 }
 
-.bg-img{
-	background-image: url('/static/img/IMG1.png');
+.bg-img {
+    background-image: url('/static/img/IMG1.png');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
