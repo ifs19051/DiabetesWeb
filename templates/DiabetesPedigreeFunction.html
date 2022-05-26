@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Diabetes check</title>
+	<title>Diabetes Web</title>
+	<link rel="icon" href="../static/img/Tab.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
@@ -11,50 +12,50 @@
 </head>
 
 <body>
-				<nav class="navbar fixed-top fw-bold">
-					<div class="container-fluid ">
-					  <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-						<span class="navbar-toggler-icon"></span>
-					  </button>
-					  <div class="offcanvas offcanvas-start left" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-						<div class="offcanvas-header">
-						  <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>-->
-						  <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						</div>
-						<div class="offcanvas-body bg-img">
-						  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-							<li class="nav-item">
-							  <a class="nav-link active text-white" aria-current="page" href="{{ url_for('about')}}"method="post">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Pregnancies')}}"method="post">Pregancies</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Glucose')}}"method="post">Glucose</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('BloodPressure')}}"method="post">Blood pressure</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('SkinThickness')}}"method="post">Skin Thickness</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Insulin')}}"method="post">Insulin</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('BMI')}}"method="post">BMI (Body mass indexis)</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('DiabetesPedigreeFunction')}}"method="post">Diabetes Pedigree Function</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Age')}}"method="post">Age</a>
-							  </li>
-							</ul>
-						</div>
-					  </div>
-					</div>
-				  </nav>
+	<nav class="navbar fixed-top fw-bold">
+		<div class="container-fluid ">
+		  <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="offcanvas offcanvas-start left" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+			  <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>-->
+			  <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body bg-img">
+			  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+					<li class="nav-item">
+					  <a class="nav-link active " aria-current="page" href="{{ url_for('about')}}"method="post" style="color: #F7CB2D;">About</a>
+					</li>
+				<li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('Pregnancies')}}"method="post" style="color: #F7CB2D">Pregancies</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('Glucose')}}"method="post" style="color: #F7CB2D">Glucose</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('BloodPressure')}}"method="post" style="color: #F7CB2D">Blood pressure</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('SkinThickness')}}"method="post" style="color: #F7CB2D">Skin Thickness</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('Insulin')}}"method="post" style="color: #F7CB2D">Insulin</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('BMI')}}"method="post" style="color: #F7CB2D">BMI (Body mass indexis)</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('DiabetesPedigreeFunction')}}"method="post" style="color: #F7CB2D">Diabetes Pedigree Function</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="{{ url_for('Age')}}"method="post" style="color: #F7CB2D">Age</a>
+				  </li>
+				</ul>
+			</div>
+		  </div>
+		</div>
+	  </nav>
 				  
 				<header >
 					  <div class="container">
@@ -63,7 +64,7 @@
 							<div class="" style="padding-top:50%;">
 							  <h1>Diabetes Pedigree Function</h1>
 							  <p >Something provides information about diabetes history in relatives and genetic relationship of those relatives with patients. Wich is higher Pedigree Function means patient is more likely to have diabetes.</p>
-							  <button type="button" class="btn btn-primary" ><a href="{{ url_for('back')}}"method="post" style="color:white; text-decoration:none">back</a></button>
+							  <button type="button" class="btn" style="background-color:#F7CB2D ;"><a href="{{ url_for('back')}}"method="post" style="color:black; text-decoration:none">back</a></button>
 							</div>
 						  </div>
 						</div>

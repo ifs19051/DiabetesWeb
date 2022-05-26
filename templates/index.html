@@ -3,89 +3,98 @@
 
 <head>
 
-	<title>Diabetes check</title>
+	<title> Diabetes Web</title>
+	<link rel="icon" href="../static/img/Tab.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style2.css') }}">
 </head>
-<body>
-	<div class="container ">
+<body class="bg-img2">
+	<div class="container">
 						
-					<nav class="navbar fixed-top fw-bold">
-					<div class="container-fluid ">
-					  <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-						<span class="navbar-toggler-icon"></span>
-					  </button>
-					  <div class="offcanvas offcanvas-start left" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-						<div class="offcanvas-header">
-						  <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>-->
-						  <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						</div>
-						<div class="offcanvas-body bg-img">
-						  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-							<li class="nav-item">
-							  <a class="nav-link active text-white" aria-current="page" href="{{ url_for('about')}}"method="post">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Pregnancies')}}"method="post">Pregancies</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Glucose')}}"method="post">Glucose</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('BloodPressure')}}"method="post">Blood pressure</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('SkinThickness')}}"method="post">Skin Thickness</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Insulin')}}"method="post">Insulin</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('BMI')}}"method="post">BMI (Body mass indexis)</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('DiabetesPedigreeFunction')}}"method="post">Diabetes Pedigree Function</a>
-							  </li>
-							  <li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" href="{{ url_for('Age')}}"method="post">Age</a>
-							  </li>
-							</ul>
-						</div>
-					  </div>
-					</div>
-				  </nav>
+		<nav class="navbar fixed-top fw-bold">
+			<div class="container-fluid ">
+			  <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="offcanvas offcanvas-start left" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>-->
+				  <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body bg-img">
+				  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+						<li class="nav-item">
+						  <a class="nav-link active " aria-current="page" href="{{ url_for('about')}}"method="post" style="color: #F7CB2D;">About</a>
+						</li>
+					<li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('Pregnancies')}}"method="post" style="color: #F7CB2D">Pregancies</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('Glucose')}}"method="post" style="color: #F7CB2D">Glucose</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('BloodPressure')}}"method="post" style="color: #F7CB2D">Blood pressure</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('SkinThickness')}}"method="post" style="color: #F7CB2D">Skin Thickness</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('Insulin')}}"method="post" style="color: #F7CB2D">Insulin</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('BMI')}}"method="post" style="color: #F7CB2D">BMI (Body mass indexis)</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('DiabetesPedigreeFunction')}}"method="post" style="color: #F7CB2D">Diabetes Pedigree Function</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active " aria-current="page" href="{{ url_for('Age')}}"method="post" style="color: #F7CB2D">Age</a>
+					  </li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+		  </nav>
 					
 					<div class="col-sm-12 " style="padding-top: 50px;">
+						<div >
+							<center>
+								<h2 class="title">Diabetes Web</h2>
+								<br>
+								<h2 class="fw-bold">"Web That Allows to Predict Your Diabetes"</h2>
+								<hr>
+							</center>
+						</div>
 							<form  class="fw-bold" action="{{ url_for('predict')}}"method="post">
-								<label for="" class="fw-bold">Pregancies</label>
-								<input type="text" class="field" name="Pregnancies" placeholder="Pregnancies" required="required" />
+								<label for="" class="fw-bold ">Pregancies</label>
+								<input type="text" class="field" name="Pregnancies" placeholder="Pregnancies" required="required" style="color:#F7CB2D ;"/>
 								<br>
 								<label for="" class="fw-bold">Glucose</label>
-								<input type="text" class="field" name="Glucose" placeholder="Glucose" required="required" />
+								<input type="text" class="field" name="Glucose" placeholder="Glucose" required="required" style="color:#F7CB2D ;"/>
 								
 								<label for="" class="fw-bold">Blood pressure</label>
-								<input type="text" class="field" name="BloodPressure" placeholder="BloodPressure" required="required" />
+								<input type="text" class="field" name="BloodPressure" placeholder="BloodPressure" required="required" style="color:#F7CB2D ;"/>
 								
 								<label for="" class="fw-bold">Skin Thickness</label>
-								<input type="text" class="field" name="SkinThickness" placeholder="SkinThickness" required="required" />
+								<input type="text" class="field" name="SkinThickness" placeholder="SkinThickness" required="required" style="color:#F7CB2D ;"/>
 								
 								<label for="" class="fw-bold">Insulin</label>
-								<input type="text" class="field" name="Insulin" placeholder="Insulin" required="required" />
+								<input type="text" class="field" name="Insulin" placeholder="Insulin" required="required" style="color:#F7CB2D ;"/>
 								
 								<label for="" class="fw-bold">Body mass indexis</label>
-								<input type="text" class="field" name="BMI" placeholder="BMI" required="required" />
+								<input type="text" class="field" name="BMI" placeholder="BMI" required="required" style="color:#F7CB2D ;"/>
 								
 								<label for="" class="fw-bold">Diabetes Pedigree Function</label>
-								<input type="text" class="field" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" />
+								<input type="text" class="field" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" style="color:#F7CB2D ;"/>
 								
 								<label for="" class="fw-bold">Age</label>
-								<input type="text" class="field" name="Age" placeholder="Age" required="required" />
+								<input type="text" class="field" name="Age" placeholder="Age" required="required" style="color:#F7CB2D ;"/>
 								<center>
-									<button type="submit" class="btn btn-primary">Check</button>
-									<a href="{{ url_for('home')}}" class="btn btn-primary">Delete All</a>
+									<button type="submit" class="btn">Check</button>
+									<a href="{{ url_for('home')}}" class="btn">Delete All</a>
 									
 								</center>
 							</form>
