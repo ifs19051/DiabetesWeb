@@ -18,7 +18,6 @@ y = df.Outcome
 
 knn = KNeighborsClassifier()
 
-#regressor = LinearRegression()
 
 #Fitting model with trainig data
 knn.fit(x, y)
