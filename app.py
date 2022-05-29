@@ -52,7 +52,7 @@ def DiabetesPedigreeFunction():
 def Age():
     return render_template('Age.html')
 
-#To use the predict button in our web-app
+#To use the predict button
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
@@ -62,11 +62,9 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     
-    #return render_template('index.html', prediction_text='CO2 Emission of the vehicle is :{}'.format(prediction))
     if(prediction == 0):
         return render_template('berhasil.html')
     return render_template('gagal.html')    
-    #return render_template('index.html', prediction_text='CO2 Emission of the vehicle is :{}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
